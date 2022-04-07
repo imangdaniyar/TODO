@@ -1,0 +1,38 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+    <button class="add_task">Add task</button>
+    <hr>
+    <h1>Completed tasks in "List 1"</h1>
+    <table>
+        <tr>
+            <th>Task</th>
+            <th>Created</th>
+            <th>Due on</th>
+            <th>Owner</th>
+            <th>Mark</th>
+        </tr>
+
+        {% for task in tasks %}
+            {% if task.mark %}
+                <tr>
+                    <td>{{ task.task_name }}</td>
+                    <td>{{ task.created_date }}</td>
+                    <td>{{ task.due_to_date }}</td>
+                    <td>{{ task.owner }}</td>
+                    <td>
+                        <div class="mark">
+                            {% if task.mark %}
+                                Done
+                            {% else %}
+                                Not Done
+                            {% endif %}
+                        </div>
+                    </td>
+                </tr>
+            {% endif %}
+        {% endfor %}
+    </table>
+    <button class="incomplete_tasks">View incomplete tasks</button>
+    <button class="delete_list">Delete this list</button>
+{% endblock %}

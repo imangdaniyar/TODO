@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    margin: 0 0 10px 0;
+    padding: 5px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 20px;
+}
+
+table {
+    margin: 20px 0 20px 0;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.mark {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    background-color: #38a2bf;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+th {
+    font-weight: bold;
+    padding: 10px 20px;
+
+}
+
+tr {
+    border-top: 0.5px solid rgba(128, 128, 128, 0.5);
+
+}
+
+td {
+    padding: 10px 20px;
+}
+
+
+.content {
+    width: 1080px;
+    margin: auto auto auto auto;
+}
+
+.add_task {
+    background-color: blue;
+    color: white;
+}
+
+.completed_tasks, .incomplete_tasks {
+    background-color: orange;
+    color: black;
+}
+
+.delete_list {
+    background-color: red;
+    color: white;
+}
